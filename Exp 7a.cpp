@@ -1,25 +1,21 @@
-#include <iostream>
-#include <vector> // Include vector library
-using namespace std;
+//Array
 
+#include <iostream>
+#include <vector> 
+using namespace std;
 int main() {
     int n;
     cout << "Enter number of elements: ";
     cin >> n;
-
-    vector<int> a(n); // Declare a vector of size n
-
+    vector<int> a(n); 
     cout << "Enter array elements: ";
     for (int i = 0; i < n; i++) {
-        cin >> a[i]; // Read elements into the vector
+        cin >> a[i]; 
     }
-
     cout << "The array elements are:";
     for (int i : a) {
-        cout << " " << i; // Display elements
+        cout << " " << i; 
     }
-    cout << endl; // New line at the end
-
+    cout << endl; 
     return 0;
 }
-
